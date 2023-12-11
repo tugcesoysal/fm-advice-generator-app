@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* - Font size (quote): 28px */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--dark-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  margin: 35% auto;
+  background-color: var(--dark-grayish-blue);
+  padding: 30px 10px;
+  border-radius: 10px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+h4 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: var(--neon-green);
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: var(--light-cyan);
+  font-size: 28px;
+}
+
+.line-break {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 85%;
+}
+
+button {
+  background-color: var(--neon-green);
+  border: none;
+  border-radius: 50%;
+  padding: 30px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 44%;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0px 0px 30px 2px var(--neon-green);
+}
+
+@media (min-width: 600px) {
+  .App {
+    padding: 30px 40px;
   }
 }
